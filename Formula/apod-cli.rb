@@ -5,20 +5,20 @@
 class ApodCli < Formula
   desc "A command-line tool to browse the NASA Astronomy Picture of the Day archive."
   homepage "https://github.com/marcusziade/homebrew-apod-cli"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/marcusziade/apod-cli/releases/download/v0.0.3/apod-cli_0.0.3_darwin_arm64.tar.gz"
-      sha256 "372d7af741c4918662ee6b214084be11040aaa902842bad6ed573b550cc3c18c"
+      url "https://github.com/marcusziade/apod-cli/releases/download/v0.0.4/apod-cli_0.0.4_darwin_arm64.tar.gz"
+      sha256 "56c66d9a54e89a76f7b81332da1c032f66ac7af02a348f0e1f331ba8cd1c3165"
 
       def install
         bin.install "apod-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/marcusziade/apod-cli/releases/download/v0.0.3/apod-cli_0.0.3_darwin_amd64.tar.gz"
-      sha256 "89ae776b293d344367e91fd09ef49f4f78bd90a9daa3015a8961bef8b0665721"
+      url "https://github.com/marcusziade/apod-cli/releases/download/v0.0.4/apod-cli_0.0.4_darwin_amd64.tar.gz"
+      sha256 "286f839d30ca77789ea33eafa2b7c0e58934bb89f943253aaae55dfd3ae15fa6"
 
       def install
         bin.install "apod-cli"
@@ -28,16 +28,16 @@ class ApodCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marcusziade/apod-cli/releases/download/v0.0.3/apod-cli_0.0.3_linux_arm64.tar.gz"
-      sha256 "a30d6990d6c5169bd1a2e3b5dd685137aa1deca4500d5e4a5b362e41f3882400"
+      url "https://github.com/marcusziade/apod-cli/releases/download/v0.0.4/apod-cli_0.0.4_linux_arm64.tar.gz"
+      sha256 "d0a6fced0221220939f6df7d29a480aa13e002c49dea07a49ef1638cdd35a677"
 
       def install
         bin.install "apod-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/marcusziade/apod-cli/releases/download/v0.0.3/apod-cli_0.0.3_linux_amd64.tar.gz"
-      sha256 "b99734f7069660e624e7e1e4338f961a27f8a7c564a19d25f6decc92f06bfaa9"
+      url "https://github.com/marcusziade/apod-cli/releases/download/v0.0.4/apod-cli_0.0.4_linux_amd64.tar.gz"
+      sha256 "48b81aaf83e9fd3d6bcc5c055f0d8407100e76215c703203ac226f97def17945"
 
       def install
         bin.install "apod-cli"
